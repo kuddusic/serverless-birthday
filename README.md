@@ -84,7 +84,7 @@ Mocha testing framework is integrated with Serverless framework.
 
 In order to test functions
 ```bash
-serverless invoke test
+serverless invoke test -s dev
 ```
 Example output:
 ```bash
