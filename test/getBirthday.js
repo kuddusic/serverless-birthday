@@ -38,8 +38,16 @@ describe('getBirthday', () => {
     });
   });
 
-  it('Return should be 200', () => {
-    return wrapped.run({"pathParameters": {"id":"John"} }).then((response) => {
+  step('Return should be 204 for user Test create!', () => {
+    return wrapped_save.run({"pathParameters": {"id":"Test"}, "body":"{\"birthday\":\"2007-05-19\"}" } ).then((response) => {
+      //console.log(JSON.stringify(response));      
+      expect(response.statusCode).to.be.equal(204);
+      
+    });
+  });
+
+  step('Return should be 200', () => {
+    return wrapped.run({"pathParameters": {"id":"Test"} }).then((response) => {
       //console.log(JSON.stringify(response));
       expect(response.statusCode).to.be.equal(200);
       
