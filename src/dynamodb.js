@@ -13,7 +13,7 @@ if (process.env.IS_OFFLINE) {
 }
 else {
   options = {
-    region: 'us-east-1'    
+    region: process.env.REGION 
   };
 }
 
