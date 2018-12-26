@@ -9,14 +9,14 @@
   "author": "Kuddusi Ciftcibasi",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.382.0",
-    "serverless-dynamodb-local": "^0.2.35",
-    "serverless-offline": "^3.31.3"
+    "aws-sdk": "^2.382.0"
   },
   "devDependencies": {
     "mocha-steps": "^1.1.0",
     "serverless-mocha-plugin": "^1.9.1",
     "serverless-plugin-aws-alerts": "^1.2.4",
-    "serverless-plugin-canary-deployments": "^0.4.4"
+    "serverless-plugin-canary-deployments": "^0.4.4",
+    "serverless-dynamodb-local": "^0.2.35",
+    "serverless-offline": "^3.31.3"
   }
 }
