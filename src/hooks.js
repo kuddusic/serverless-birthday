@@ -1,7 +1,7 @@
 const aws = require('aws-sdk');
 const codedeploy = new aws.CodeDeploy({apiVersion: '2014-10-06'});
 
-module.exports.pre4grt = (event, context, callback) => {
+module.exports.pre4get = (event, context, callback) => {
   var deploymentId = event.DeploymentId;
   var lifecycleEventHookExecutionId = event.LifecycleEventHookExecutionId;
 
