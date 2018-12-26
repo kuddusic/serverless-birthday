@@ -23,9 +23,14 @@ sls dynamodb start
 sls dynamodb migrate
 ```
 ## Deploy
-After tests are finished successfully, one can deploy the stack on dev via:
+After tests are finished successfully, one can deploy the stack on dev in us-east-1 via:
 ```bash
 serverless deploy
+```
+or to deploy different region:
+
+```bash
+serverless deploy --region=eu-west-1 --stage=dev
 ```
 just update the function:
 
@@ -36,7 +41,7 @@ serverless deploy -f functionName
 if everything is ok then deploy for production.
 
 ```bash
-serverless deploy --stage=prod
+serverless deploy --region=eu-west-1  --stage=prod
 ```
 
 Serverless uses CloudForm to update stack.
@@ -84,7 +89,7 @@ Mocha testing framework is integrated with Serverless framework.
 
 In order to test functions
 ```bash
-serverless invoke test -s dev
+serverless invoke test --region=eu-west-1 --stage=prod
 ```
 Example output:
 ```bash
