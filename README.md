@@ -1,4 +1,4 @@
-#Serverless Birthday REST API via Node.js with DynamoDB backend
+# Serverless Birthday REST API via Node.js with DynamoDB backend
 
 Simple REST Api for birthday service. It stores user's birthday and return number of days left for his birthday. Even it greets him. :)
 
