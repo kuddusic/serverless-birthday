@@ -9,7 +9,7 @@
   "author": "Kuddusi Ciftcibasi",
   "license": "ISC",
   "dependencies": {
-    "aws-sdk": "^2.382.0"
+    "aws-sdk": "^2.814.0"
   },
   "devDependencies": {
     "mocha-steps": "^1.1.0",
